@@ -15,22 +15,38 @@ body {
   width: 80%;
   margin: 5rem auto 3rem;
 }
+.text-right {
+  display: block;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
 
 .text-right h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: inherit;
   margin: 4rem auto 1rem;
-  font-size: 1.5625rem;
+  font-size: 2rem;
 }
-.text-right {
-  display: block;
-  width: 70%;
-  text-align: center;
-  color: white;
-  margin: auto;
+.text-right p {
+  margin: 0 auto 3rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.1rem;
+  width: 85%;
+}
+
+.register-button {
+  background-color: white;
+  color: hsl(257, 40%, 49%);
+  padding: 1rem 5rem;
+  border-radius: 2rem;
+  font-family: "Poppins", sans-serif;
 }
 
 footer {
-  display: none;
+  display: block;
+  color: white;
+  font-size: 1.3rem;
+  margin: 4rem auto 0;
 }
