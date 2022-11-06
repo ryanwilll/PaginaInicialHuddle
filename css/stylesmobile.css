@@ -3,6 +3,7 @@ body {
   background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .logo-tipo {
@@ -44,9 +45,99 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-footer {
-  display: block;
+.logotipos {
+  display: flex;
   color: white;
   font-size: 1.3rem;
-  margin: 4rem auto 0;
+  justify-content: center;
+  justify-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin: 2rem 0;
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    /* adicionando imagem de fundo */
+    background-image: url(../images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: hsl(257, 40%, 49%);
+    background-size: 80.5%;
+  }
+
+  .logo-tipo {
+    display: block;
+    width: 12%;
+    margin: 3.3rem 0 0 4rem;
+  }
+
+  .img-left {
+    display: inline-block;
+    width: 43%;
+    margin: 4.2rem 0 0 4rem;
+  }
+  .text-right {
+    position: absolute;
+    display: inline-block;
+    width: 47%;
+    text-align: center;
+    color: white;
+    margin: 5rem 0 0 4rem;
+  }
+
+  .text-right h1 {
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    color: inherit;
+    font-size: 2.5rem;
+    width: 75%;
+    margin: 1rem 0 0 0;
+  }
+  .text-right p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+    width: 80%;
+    text-align: left;
+    margin: 1rem 0 0 0;
+  }
+
+  .register-button {
+    display: block;
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    width: 30%;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    font-family: "Poppins", sans-serif;
+    -webkit-box-shadow: 9px 15px 43px 0px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 9px 15px 43px 0px rgba(0, 0, 0, 0.53);
+    box-shadow: 9px 15px 43px 0px rgba(0, 0, 0, 0.53);
+    transition: 0.5s ease-in-out;
+  }
+
+  .register-button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+  }
+  footer {
+    margin: 0;
+  }
+
+  .logotipos .redes-sociais {
+    display: flex;
+    margin: 0 10rem 1rem 0;
+    gap: 1rem;
+    font-size: 2rem;
+    justify-content: right;
+    justify-items: right;
+  }
+
+  .link {
+    transition: 0.5s ease-in-out;
+  }
+  .logotipos .redes-sociais .link:hover {
+    color: hsl(300, 69%, 71%);
+  }
 }
