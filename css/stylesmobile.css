@@ -1,0 +1,36 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.logo-tipo {
+  width: 40%;
+  margin: 1rem 0 0 1rem;
+}
+
+.img-left {
+  display: block;
+  width: 80%;
+  margin: 5rem auto 3rem;
+}
+
+.text-right h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: inherit;
+  margin: 4rem auto 1rem;
+  font-size: 1.5625rem;
+}
+.text-right {
+  display: block;
+  width: 70%;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+footer {
+  display: none;
+}
